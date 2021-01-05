@@ -1,0 +1,8 @@
+# Compiled files
+*.o
+*.d
+*.exe
+
+# IDE Settings
+/.vs
+/.vscode
