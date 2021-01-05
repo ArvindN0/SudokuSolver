@@ -16,4 +16,9 @@ $(EXEC): $(OBJECTS)
 
 .PHONY: clean
 clean:
+
+ifeq ($(OS),Windows_NT)
+	del *.o *.exe *.d
+else
 	rm  -f $(OBJECTS) $(DEPENDS) $(EXEC)
+endif
